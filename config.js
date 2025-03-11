@@ -1,11 +1,8 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('database', 'user', 'password', {
+const sequelize = new Sequelize('universidade', 'root', 'senha123', {
     host: 'localhost',
-    dialect: 'mariadb',
-    dialectOptions: {
-      allowPublicKeyRetrieval: true
-    }
-  });
+    dialect: 'mariadb'
+});
 
 module.exports = sequelize;
